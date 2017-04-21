@@ -4,7 +4,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ site.description }}">
-
+    <!--prefix="og: http://ogp.me/ns#"  include this in html tag-->
+    <meta name="keyword" content=""/>
+    <meta property="og:locale" content="en-US"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html',''}}">
@@ -24,5 +29,9 @@
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
     {% feed_meta %}
+    
+    <!--google analytics code-->
+    <script>
+    </script>
 
 </head>
